@@ -1,52 +1,85 @@
-# Efficiency of Machine Learning Algorithms for Predicting Fluctuations in the Cryptocurrency Market
+# Cryptocurrency Market Prediction Using Machine Learning
 
-## Authors and Affiliations
-**Harivansh Rathi**  
-UVA Class of 2027
+## Overview
+This project explores the efficiency of machine learning algorithms in predicting fluctuations in the cryptocurrency market. The focus is on analyzing various models, including LSTM (Long Short-Term Memory), regression, random forest, and SVM, to understand their effectiveness in forecasting cryptocurrency prices. 
 
-## Abstract
-The last several years have seen a rise in interest in machine learning and AI-assisted crypto trading. Here, we put this strategy to the test to see if it might indeed be profitable to take advantage of the crypto market's inefficiencies. We examine and analyze data from 2013 to 2021 to demonstrate that basic trading techniques surpass traditional benchmarks when supported by cutting-edge machine learning models, such as LSTM (long short-term memory). Our results show that machine learning can, in fact, be used profitably in the crypto market, and simple machine learning methods such as regression can be deployed successfully to predict the crypto market. This can be used advantageously by crypto traders.
+**Key Features:**
+- Utilizes a time-series dataset (2013–2021) for several cryptocurrencies.
+- Implements advanced machine learning models with a focus on LSTM for sequential data analysis.
+- Demonstrates the volatility and challenges of predicting cryptocurrency markets.
 
-## Introduction
-The crypto market is renowned for its turbulence, dynamic, and nonlinear nature, making it very difficult to anticipate crypto prices accurately. However, the availability of large data sets allows researchers to use machine learning to identify patterns and trends. In this study, we explore several prediction models, including regression, random forest, LSTM, and SVM, to predict crypto market trends. We use Python, Scikit-learn, and other tools to process data and build models.
+---
 
-LSTM, a type of recurrent neural network, is particularly promising for analyzing sequential data like time series. This research builds on previous studies, which primarily focus on a few cryptocurrencies and outdated datasets, by incorporating more recent data and a broader range of currencies.
+## Dataset
+The dataset includes daily closing prices of cryptocurrencies from 2013 to 2021. It can be downloaded from Kaggle:  
+[Every Cryptocurrency Daily Market Price](https://www.kaggle.com/).
 
-## Instructions
-- To Run this file, you must first download the dataset that this is based upon
-- The dataset can be found on [Kaggle](https://www.kaggle.com/datasets/jessevent/all-crypto-currencies) and download as a zip file
-- The project can then be run and tested on this dataset using Google Collab where you will get a prompt to upload the csv file
-  
+---
+
+## Prerequisites
+Ensure the following tools and libraries are installed:
+- Python 3.7+
+- Scikit-learn
+- Keras
+- TensorFlow
+- Jupyter Notebook or Google Colab
+- Pandas, Numpy, Matplotlib, Seaborn
+
+---
+
+## How to Run
+1. **Download the Dataset**  
+   - Obtain the dataset from Kaggle and unzip it locally.
+   
+2. **Set Up the Environment**  
+   - Install the required Python libraries:
+     ```bash
+     pip install scikit-learn keras tensorflow pandas matplotlib seaborn
+     ```
+
+3. **Execute the Notebook**  
+   - Use Google Colab or Jupyter Notebook to run the provided script:
+     - Upload the CSV dataset file when prompted.
+   - The script will process the data, train the models, and display results.
+
+---
+
 ## Results
-Our results demonstrate an accuracy rate of 50-60%, highlighting the volatility of the cryptocurrency market. The LSTM model showed a slight improvement over other models, indicating its suitability for time-series data. We implemented our models using Python libraries such as Sklearn, Keras, and Tensorflow, executing them on the JupyterLab platform. The best model was selected based on RMSE and MAPE values. 
+The project evaluates the performance of different machine learning models:
+- **Accuracy:** 50–60%, reflecting market volatility.
+- **Best Model:** LSTM (due to suitability for time-series data).
+- Evaluation metrics include RMSE and MAPE.
 
-### Key Findings:
-- Machine learning algorithms can predict short-term changes in the bitcoin market with reasonable accuracy.
-- RNN and LSTM models are particularly useful for short-term predictions in the crypto market.
-- Although not aimed at maximizing trading success, this study suggests that predictive techniques may be applied with longer prediction horizons to minimize transaction costs.
+**Key Insights:**
+- Short-term price movements can be reasonably predicted using machine learning.
+- LSTM models outperform others for time-series prediction.
+- Potential for extending predictions to minimize trading costs.
 
-## Discussion
-This research demonstrates that machine learning can predict cryptocurrency prices with modest accuracy, though market uncertainty remains a limiting factor. We also discuss how socio-economic factors such as political events influence crypto prices and suggest directions for future research. Future studies may improve upon the LSTM model by adding dropout layers or conducting sentiment analysis alongside LSTM predictions.
+---
 
-## Methods
-This section provides an overview of the machine learning methods used in this study. The dataset, sourced from [Kaggle](https://www.kaggle.com/datasets/jessevent/all-crypto-currencies), consists of daily closing prices from 2013 to 2021 for several cryptocurrencies. 
+## Technologies Used
+- **Languages:** Python
+- **Frameworks:** TensorFlow, Keras
+- **Libraries:** Scikit-learn, Pandas, Matplotlib
+- **Platforms:** Jupyter Notebook, Google Colab
 
-### Experimental Purpose
-The goal is to predict the closing price based on time series data. Six separate LSTM models were trained to predict future prices for Bitcoin, Ripple, Ethereum, and other cryptocurrencies. Key parameters of the models include:
-- Learning rate: 0.001
-- Optimizer: Adam
-- Batch size: 32
-- Hidden layers: 2
-- Neurons per layer: 128
+---
 
-### Models
-This study focuses on the LSTM model, well-suited for time series data interpretation and prediction. In addition to LSTM, Support Vector Machines (SVM) and other regression models are used for comparison.
+## Future Work
+- Improve LSTM models with techniques like dropout layers for regularization.
+- Combine sentiment analysis with price prediction models.
+- Extend research to include socio-economic factors influencing cryptocurrency prices.
+
+---
 
 ## Acknowledgments
-This work was supported by the Lumiere research team and Emily Kim (Doctoral Researcher at Carnegie Mellon University Robotics).
+- **Research Team:** Lumiere Research Team  
+- **Mentor:** Emily Kim, Doctoral Researcher at Carnegie Mellon University Robotics.
+
+---
 
 ## References
-1. Sebastião, H., & Godinho, P. (2021). Forecasting and trading cryptocurrencies with machine learning under changing market conditions. *Financial Innovation*. Retrieved from [SpringerOpen](https://jfin-swufe.springeropen.com/articles/10.1186/s40854-020-00217-x#Abs1).
-2. Alessandretti, L., ElBahrawy, A., Aiello, L. M., & Baronchelli, A. (2018). Anticipating cryptocurrency prices using machine learning. *Complexity*. Retrieved from [Hindawi](https://www.hindawi.com/journals/complexity/2018/8983590/#materials-and-methods).
-3. Akyildirim, E., Goncu, A., & Sensoy, A. (2020). Prediction of cryptocurrency returns using machine learning. *Annals of Operations Research*. Retrieved from [SpringerLink](https://link.springer.com/article/10.1007/s10479-020-03575-y).
-4. Every Cryptocurrency Daily Market Price. (2018). *Dataset*. Retrieved from [Kaggle](https://www.kaggle.com/datasets/jessevent/all-crypto-currencies).
+1. Sebastião, H., & Godinho, P. (2021). *Forecasting and trading cryptocurrencies with machine learning under changing market conditions*. Financial Innovation.  
+2. Alessandretti, L., et al. (2018). *Anticipating cryptocurrency prices using machine learning*. Complexity.  
+3. Akyildirim, E., et al. (2020). *Prediction of cryptocurrency returns using machine learning*. Annals of Operations Research.  
+4. Kaggle Dataset: *Every Cryptocurrency Daily Market Price*.
