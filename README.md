@@ -15,8 +15,7 @@ LSTM, a type of recurrent neural network, is particularly promising for analyzin
 ## Instructions
 - To Run this file, you must first download the dataset that this is based upon
 - The dataset can be found on [Kaggle](https://www.kaggle.com/datasets/jessevent/all-crypto-currencies) and download as a zip file
-- Once the file has been downloaded you must add it to the same folder as the .ipynb file on your computer
-- The project can then be run and tested on this dataset
+- The project can then be run and tested on this dataset using Google Collab where you will get a prompt to upload the csv file
   
 ## Results
 Our results demonstrate an accuracy rate of 50-60%, highlighting the volatility of the cryptocurrency market. The LSTM model showed a slight improvement over other models, indicating its suitability for time-series data. We implemented our models using Python libraries such as Sklearn, Keras, and Tensorflow, executing them on the JupyterLab platform. The best model was selected based on RMSE and MAPE values. 
